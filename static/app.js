@@ -1,3 +1,7 @@
+// redeploy fix
+git add static/app.js
+git commit -m "Force redeploy"
+git push
 // -------------------------------
 // TRANSLATIONS
 // -------------------------------
@@ -488,4 +492,5 @@ function updateChart() {
 
     const labels = gpaData.semesters.map(s => s.name);
     const semGPA = gpaData.semesters.map(s => semesterGPA(s));
+
     const cum = cumulativeG
